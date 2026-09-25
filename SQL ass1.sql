@@ -29,6 +29,17 @@ Rename table location to Locations;
 truncate table employees;
 drop table employees;
 drop database employeedatabase;
+create database employee
+use employee
+
+CREATE TABLE departments (
+    department_id INT PRIMARY KEY,
+    department_name VARCHAR(100) NOT NULL UNIQUE
+);
+CREATE TABLE location (
+    location_id INT AUTO_INCREMENT PRIMARY KEY,
+    location VARCHAR(30) NOT NULL UNIQUE
+);
 create TABLE employees (
     employee_id INT PRIMARY KEY,
     employee_name VARCHAR(50) NOT NULL,
